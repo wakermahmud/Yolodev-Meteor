@@ -9,10 +9,13 @@ deploy:
   skip_cleanup: true
   on:
     repo: YoloDev/meteor
+    tags: true
 install:
   - npm install -g grunt-cli
   - npm install
 script:
   - grunt build
-after_script:
-  - cd release && zip ../release.zip
+before_deploy: 
+  - cd release
+  - zip ../release.zip
+  - cd ..
