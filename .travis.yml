@@ -16,6 +16,4 @@ install:
 script:
   - grunt build
 before_deploy: 
-  - cd release
-  - zip ../release.zip
-  - cd ..
+  - zip -r release release/*
