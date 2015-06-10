@@ -1,0 +1,29 @@
+@require 'variables'
+
+$material
+  background-color: white
+  overflow: hidden
+  position: relative
+
+$paper
+  @extend $material
+  padding: paper-padding-vertical paper-padding-horizontal
+  
+  @media screen and (max-width: 900px)
+    padding: card-padding-vertical card-padding-horizontal
+
+$card
+  @extend $material
+  padding: card-padding-vertical card-padding-horizontal
+
+$paper-content
+  padding-left: paper-content-inset
+  padding-right: paper-content-inset
+  
+  @media screen and (max-width: 900px)
+    padding-left: (paper-content-inset / 2)
+    padding-right: (paper-content-inset / 2)
+  
+  @media screen and (max-width: 500px)
+    padding-left: 0
+    padding-right: 0

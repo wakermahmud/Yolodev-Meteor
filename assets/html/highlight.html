@@ -1,0 +1,27 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/xcode.min.css" />
+
+<dom-module id="highlight-code">
+  <style is="custom-style">
+    :root {
+      display: none;
+    }
+  </style>
+</dom-module>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/javascript.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/fsharp.min.js"></script>
+<script>
+  Polymer({
+    is: 'highlight-code',
+
+    attached: function() {
+      var parent = this.parentNode;
+      var codeBlocks = parent.querySelectorAll('pre > code');
+      for (var i = 0, l = codeBlocks.length; i < l; i++) {
+        hljs.highlightBlock(codeBlocks[i]);
+      }
+    }
+  });
+</script>

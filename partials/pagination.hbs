@@ -1,0 +1,17 @@
+<paper-material elevation="1">
+  <nav class="pagination layout horizontal center-justified" role="navigation" >
+    <div class="flex-1">
+      {{#if prev}}
+        <a href="{{page_url prev}}"><paper-button class="newer-posts">&larr; Newer Posts</paper-button></a>
+      {{/if}}
+    </div>
+    <div class="flex-2 page-number">
+      <span class="">Page {{page}} of {{pages}}</span>
+    </div>
+    <div class="flex-1">
+      {{#if next}}
+        <a href="{{page_url next}}"><paper-button class="older-posts">Older Posts &rarr;</paper-button></a>
+      {{/if}}
+    </div>
+  </nav>
+</paper-material>

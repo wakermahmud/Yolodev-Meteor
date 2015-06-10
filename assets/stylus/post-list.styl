@@ -1,0 +1,87 @@
+@require 'variables'
+
+.bg-wrapper.post-list
+  > main
+    max-width: 800px
+
+  main > paper-material
+    background-color: white
+    margin-top: 20px
+    margin-bottom: 30px
+    padding: card-padding-vertical card-padding-horizontal
+
+  .post
+    margin-bottom: 10px
+
+    .post-header
+      .post-image
+        width: 100%
+        height: 20rem
+        background-color: lightgray
+        position: absolute
+        left: 0
+        top: 0
+
+      .title-overlay
+        width: 100%
+        height: 7rem
+        background: rgba(0, 0, 0, 0.4)
+        position: absolute
+        bottom: 0
+        left: 0
+
+        .post-title
+          color: #fff
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 1)
+          margin-top: 2.2rem
+          padding-left: card-content-inset
+          padding-right: card-content-inset
+          height: 1.2em
+          overflow: hidden
+          display: block
+          text-decoration: none
+
+    .post-excerpt
+      padding-left: card-content-inset
+      padding-right: card-content-inset
+      padding-top: 12px
+
+    .post-meta
+      padding-left: card-content-inset
+      padding-right: card-content-inset
+
+      .author-thumb
+        width: 62px
+        height: 62px
+        border-radius: 50%
+        float: right
+        margin-left: 10px
+
+      .meta
+        float: right
+        font-size: 1.5rem
+        color: light-gray
+
+        .post-author
+          display: block
+          text-align: right
+
+        .post-date
+          float: right
+
+      .tag-list
+        display: block
+        position: absolute
+        bottom: 0
+        left: card-content-inset + 2px
+        color: #777
+
+        a
+          color: inherit
+          text-decoration: none
+          font-weight: bold
+
+.pagination
+  .page-number
+    text-align: center
+    padding: 0.7em 0.57em

@@ -1,0 +1,49 @@
+@require 'variables'
+@require 'base-types'
+
+.bg-wrapper.post
+  padding-bottom: 100px
+  
+  .cover-image
+    width: 100%
+    height: calc(100vh - 192px)
+    position: absolute
+    left: 0
+    top: 0
+
+  main
+    margin-top: 30vh
+
+    > paper-material
+      @extend $paper
+
+    .post-header
+      .post-title
+        @extend $paper-content
+        padding-top: paper-content-inset
+
+      .post-date
+        padding-left: paper-content-inset
+        font-style: italic
+        font-size: 1.3rem
+
+      .tag-list
+        display: block
+        position: absolute
+        bottom: card-padding-vertical
+        right: card-padding-horizontal
+        color: #777
+
+        a
+          color: inherit
+          text-decoration: none
+          font-weight: bold
+
+    .post-content
+      @extend $paper-content
+      min-height: 50vh
+
+      img
+        max-width: 100%
+        display: block
+        margin: 0 auto

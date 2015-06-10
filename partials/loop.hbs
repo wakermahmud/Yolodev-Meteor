@@ -1,0 +1,29 @@
+{{#foreach posts}}
+<paper-material elevation="1" class="card" animated>
+  <article class="{{post_class}}">
+    <a href="{{url}}"><header class="post-header" style="height: 200px; position: relative; cursor: pointer;">
+      <iron-image class="post-image" src="{{image}}" sizing="cover"></iron-image>
+      <div class="color-overlay" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2)"></div>
+      <div class="title-overlay">
+        <h2 class="post-title">{{{title}}}</h2>
+      </div>
+      <paper-fab class="post-fab" icon="arrow-forward" tabindex="0" style="position: absolute; top: 10px; right: 10px;"></paper-fab>
+      <paper-ripple style="pointer-events: none; color: white;"></paper-ripple>
+    </header></a>
+    <section class="post-excerpt">
+      <p>{{excerpt}}&hellip;</p>
+    </section>
+    <footer class="post-meta" style="position: relative;">
+      {{#if author.image}}<iron-image class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" sizing="contain"></iron-image>{{/if}}
+      <div class="meta">
+        <span class="post-author">{{author}}</span>
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+      </div>
+      <span class="tag-list">{{tags}}</span>
+      <div style="clear: both"></div>
+    </footer>
+  </article>
+</paper-material>
+{{/foreach}}
+
+{{pagination}}
