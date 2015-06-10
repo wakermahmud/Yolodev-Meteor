@@ -5,7 +5,7 @@ deploy:
   provider: releases
   api_key:
     secure: a8VV+7DZzUxfwvH4nDLEl2S3nVo4T5tN5wlLS4rEmZQwNXGBX7AEOyT1YazAl5HAjQPH0CmCiynCpcHeCCPvYl9J7+2FEIL0edbQCQAXFkfiOZA5SxMMpDDiR1BYySg6iKike2q8z5LeiSeG79DoPEgDlMEV+YUuE/P0mU2/SHo2NFJ2gHY1CvgC0oXhHS+pVw0Oj+4A29b3ktFZz5kqCvU/JRHY4A4mhdPi+cRoQ46QfFZJ9lSCE3b0HMFUeWBXw4C5UV6BRWsHLd2INX621Ji0BjvM6VdeXRSwNho1GEdLWtllod5NLkPfmQPSe3Qq0MJ4uGhH3zus9+sItOhwA5ahtR6duFpAhXLftNDvtHFU0xN80blKviK7gn9wZTfica68d7C+BiH8cjeG9fFIrE1h3oW7yEb0ZxJtFeHca2CbNQPKtd3u2gJXUJMM6s/r2wAOHdZEYMWCKOwnQT9ycV+yNVC1xw3mcWKsiBCC08O6CnOoc8edWMcHoPpnC/nriJfxv2yERXz+I6zg9QDZAvpEutPyFOd3UYnLGbQ4fXdBhS+JuYjxEKCfyV9MLgf/RqWxa/J9J48nCM2W5cHHs3H+bmoUyv9c2DShEf4XiO9n9J/oAQwO7Xj/8d2wKUcufr6egQOx2P8NBLOHkdnJjEGsA7lQsJ999wZ6YSqOccA=
-  file: build.zip
+  file: release.zip
   skip_cleanup: true
   on:
     repo: YoloDev/meteor
